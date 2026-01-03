@@ -1,0 +1,161 @@
+body {
+    background-color: #111;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.developer {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 30%;
+    box-shadow: 0 0 7px rgb(77, 169, 205);
+}
+
+.developer img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(236, 245, 249, 0.6);
+}
+
+h2 {
+    color: #ffcc00;
+}
+
+.social-links a {
+
+    display: inline-block;
+    margin: 5px;
+    color: rgb(77, 169, 205);
+    text-decoration: none;
+    padding: 7px;
+    padding-left: 25px;
+    padding-right: 25px;
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
+}
+
+p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* ul {
+    list-style-type: none;
+    margin: 1px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    background-color: #ffcc00;
+    border-radius: 5px;
+    font-size: 25px;
+    
+}
+
+li{
+    float: right;
+}
+
+.a{
+    float: left;
+    
+}
+
+a{
+    text-decoration: none;
+    color: #222;
+} */
+
+svg:hover {
+    /* border-radius: 50px; */
+    transition: 0.5s;
+    box-shadow: 0 0 30px rgb(211, 9, 87), 0 0 50px rgb(211, 9, 87);
+    transform: scale(1.1);
+}
+
+/* 
+li {
+    color: #222;
+    padding: 12px 14px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    
+
+}
+
+li:hover{
+     background-color: rgb(77, 169, 205) ; 
+    border-radius: 50px;
+    transition: 0.5s;
+    box-shadow: 0 0 30px rgb(38, 107, 134), 0 0 50px rgb(39, 105, 132);
+    transform: scale(1.02);
+}
+ */
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .developer {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 20px;
+    }
+
+    li {
+        float: none;
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .developer img {
+        width: 100px;
+        height: 100px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .social-links a {
+        padding: 5px 15px;
+    }
+}
